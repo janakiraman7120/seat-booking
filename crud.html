@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="crud.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Modify</h1>
+        <form id="crudForm">
+            <input type="hidden" id="userId">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <small class="error" id="nameError"></small>
+            </div>
+            <div class="form-group">
+                <label for="section">Section:</label>
+                <input type="text" id="section" required>
+                <small class="error" id="sectionError"></small>
+            </div>
+            <div class="form-group">
+                <label for="usn">USN:</label>
+                <input type="text" id="usn" required>
+                <small class="error" id="usnError"></small>
+            </div>
+            <div class="form-group">
+                <label for="lectureHall">Lecture Hall Number:</label>
+                <input type="text" id="lectureHall" required>
+                <small class="error" id="lectureHallError"></small>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" required>
+                <small class="error" id="subjectError"></small>
+            </div>
+            <button type="submit" id="submitBtn">Add</button>
+        </form>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Section</th>
+                    <th>USN</th>
+                    <th>Lecture Hall Number</th>
+                    <th>Subject</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="crud.js">
+        setTimeout(function() {
+        window.location.href = "index1.html"; 
+    }, 1000);
+    </script>
+</body>
+</html>

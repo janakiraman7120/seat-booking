@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div class="container">
+        <form id="bookingForm">
+            <label for="usn">USN:</label>
+            <input type="text" id="usn" name="usn" required><br>
+            
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="">Select Time</option>
+                <option value="Morning">08:45-09:40 AM</option>
+                <option value="Afternoon">09:40-10:35</option>
+                <option value="Evening">11:00-11:55-</option>
+                <option value="Evening">11:55-12:50-</option>
+            </select><br>
+            
+            <label for="class">Class:</label>
+            <select id="class" name="class" required>
+                <option value="">Select Class</option>
+                <option value="DBMS">DBMS</option>
+                <option value="COA">COA</option>
+                <option value="Java">Java</option>
+                <option value="Iot">Iot</option>
+                <option value="TW">TW</option>
+                <option value="DAA">DAA</option>
+            </select><br>
+            
+
+            
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber" required><br>
+            
+            <button type="submit" id="confirmButton">Confirm Booking</button>
+        </form>
+    </div>
+    <script src="final.js">
+       setTimeout(function() {
+        window.location.href = "index1.html"; 
+    }, 5000);
+    </script>
+</body>
+</html>
